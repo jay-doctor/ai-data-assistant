@@ -57,11 +57,43 @@ Ask your question (q to quit): What are the best Italian restaurants?
 
 ## How It Works
 
+### Overview
+
 1. **Data Loading**: Restaurant reviews from CSV are loaded and processed
 2. **Embeddings**: Reviews are converted to embeddings using `mxbai-embed-large`
 3. **Vector Store**: Embeddings are stored in Chroma database
 4. **Retrieval**: When you ask a question, the 5 most relevant reviews are retrieved
 5. **Generation**: The LLM generates an answer based on the retrieved reviews
+
+### Detailed Workflow
+
+1. **Load Restaurant Reviews**
+   - Reads `realistic_restaurant_reviews.csv`
+   - Contains reviews with ratings and comments
+
+2. **Create Vector Embeddings**
+   - Uses Ollama with `mxbai-embed-large` model
+   - Converts text reviews into numerical vectors
+   - Stores in Chroma vector database
+
+3. **User Input**
+   - Run `python main.py`
+   - Chatbot prompts: "Ask your question (q to quit):"
+   - Example: "What are the best Italian restaurants?"
+
+4. **Retrieve Relevant Reviews**
+   - Converts your question to embeddings
+   - Searches Chroma for semantically similar reviews
+   - Fetches top matching restaurant reviews
+
+5. **Generate AI Response**
+   - Sends retrieved reviews + question to Ollama LLM (Llama 3.2)
+   - LLM combines context with local knowledge
+   - Returns intelligent answer based on actual reviews
+
+6. **Display Answer**
+   - Shows AI-generated response
+   - Loop back to step 3 or exit with 'q'
 
 ## License
 
