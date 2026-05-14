@@ -26,7 +26,7 @@ A powerful AI assistant that provides intelligent insights about businesses usin
 1. Clone the repository:
 ```bash
 git clone <your-repo-url>
-cd local-ai-agent
+cd ai-data-assistant
 ```
 
 2. Create and activate a virtual environment:
