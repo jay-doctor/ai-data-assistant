@@ -1,0 +1,28 @@
+LOCAL AI AGENT - EXPORT
+Generated: 2026-05-14 14:05:10
+================================================================================
+
+[1] 2026-05-14 13:52:37
+Q: What pizzas have the best fresh ingredients?
+A: Based on the reviews provided, it appears that the following pizzas stand out for having the best fresh ingredients:
+
+1. The "White Album" pizza with ricotta, mozzarella, garlic, and spinach, which mentions that their cheese is creamy but not heavy, and the fresh garlic adds a perfect punch.
+2. The seasonal spring offering, featuring asparagus, green garlic, and fresh peas, which praises its bright and delicious flavor.
+3. The "Mediterranean" pizza, which highlights its briny olives, tangy feta, fresh tomatoes, and herb-infused olive oil.
+
+These pizzas seem to emphasize the use of fresh ingredients, such as fresh tomatoes, garlic, asparagus, peas, ricotta cheese, and herbs.
+--------------------------------------------------------------------------------
+
+[2] 2026-05-14 13:58:05
+Q: What makes a good pizza sauce?
+A: Based on the provided reviews, it seems that a good pizza sauce should have several characteristics. Here are some common themes that emerge:
+
+1. **Herbs and spices**: Many reviewers mention that a good pizza sauce should have a hint of herbs (e.g., basil), garlic, or other spices to add depth and complexity.
+2. **Freshness**: Reviewers praise sauces made with hand-crushed tomatoes, which suggests that using fresh, high-quality ingredients is important.
+3. **Balance of sweetness and acidity**: Some reviewers mention that the sauce was either too sweet (e.g., like ketchup) or lacking in acidity, which can make the sauce unbalanced and unpleasant.
+4. **Texture**: The ideal texture for a pizza sauce seems to be a topic of debate. Some reviewers prefer a smooth sauce with small chunks of tomatoes, while others mention that a slightly chunky texture is better (e.g., the reviewer who praised the vodka sauce).
+5. **Quality of ingredients**: Several reviewers emphasize the importance of using high-quality ingredients, such as properly crushed tomatoes and fresh mozzarella cheese.
+
+Overall, it seems that a good pizza sauce should be made with fresh, high-quality ingredients, have a balanced flavor profile, and a texture that complements the other components of the pizza.
+--------------------------------------------------------------------------------
+

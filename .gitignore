@@ -40,3 +40,6 @@ chrome_langchain_db/
 # OS
 .DS_Store
 Thumbs.db
+
+# Generated exports/conversations
+exports/

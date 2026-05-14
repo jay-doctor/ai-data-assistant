@@ -1,0 +1,27 @@
+LOCAL AI AGENT - EXPORT
+Generated: 2026-05-14 13:38:23
+================================================================================
+
+[1] 2026-05-14 13:28:32
+Q: Which places use high-quality cheese?
+A: Based on the reviews provided, it appears that two places are mentioned as using high-quality ingredients.
+
+1. The first review (Document id='74') mentions that they "make their mozzarella in-house daily", which suggests a commitment to quality and freshness.
+2. There is no explicit mention of cheese being used at this location, however the second place does have a good reputation for making authentic New York style pizza slices.
+
+However, it's worth noting that one review (Document id='30') mentions that they "nail it" with "thin, foldable slices with the right amount of chew and grease" which implies that the cheese is used in moderation to achieve the desired flavor and texture.
+--------------------------------------------------------------------------------
+
+[2] 2026-05-14 13:37:12
+Q: export text
+A: It seems like you're asking me to extract the text from the reviews.
+
+Here's the extracted text:
+
+1. "Burnt crust ruins it They claim 'char' is part of the Neapolitan experience, but there's a difference between char and burnt. The entire bottom of my pizza was black and bitter. Scraping it off meant losing half the crust."
+2. "Crust like cardboard The crust had all the flavor and texture of packing material - dry, tough, and completely devoid of character. Even the decent toppings couldn't save it. The foundation of good pizza is good dough, and this wasn't it."
+3. "Too much garlic I love garlic but this was excessive - felt like they mistook cloves for teaspoons in the recipe. My breath was lethal afterward, and the powerful flavor overwhelmed the other ingredients."
+4. "Underwhelming and basic Nothing particularly wrong with it, but nothing memorable either. Standard crust, standard sauce, standard toppings. In a city with so many pizza options, this place doesn't give you any reason to return."
+5. "Perfect textural contrast The contrast between the crisp bottom, the tender interior crumb, the gooey cheese, and the slight resistance of the toppings creates a textural symphony. Each bite is interesting and satisfying in a different way."
+--------------------------------------------------------------------------------
+

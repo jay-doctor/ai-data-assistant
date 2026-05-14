@@ -8,6 +8,8 @@ A local AI-powered chatbot that answers questions about restaurant reviews using
 - **Vector Search**: Retrieves relevant restaurant reviews using embeddings
 - **RAG (Retrieval-Augmented Generation)**: Combines retrieved reviews with LLM for accurate answers
 - **No API Keys Required**: Runs entirely locally
+- **Export Conversations**: Save chat history to PDF or Text formats
+- **Conversation History**: Track all Q&A exchanges in a session
 
 ## Requirements
 
@@ -43,17 +45,44 @@ Run the interactive chatbot:
 python main.py
 ```
 
-Then ask questions about the restaurant reviews:
+### Commands
+
+Once the chatbot is running, you can use these commands:
+
+| Command | Description |
+|---------|-------------|
+| `q` | Quit the application |
+| `export txt` | Export conversation history to text file |
+| `export pdf` | Export conversation history to PDF file |
+| `history` | View conversation history summary |
+| `clear` | Clear conversation history |
+| `help` | Show available commands |
+
+### Example
+
 ```
-Ask your question (q to quit): What are the best Italian restaurants?
+Ask your question (q to quit, help for commands): What are the best Italian restaurants?
+
+[AI generates answer based on restaurant reviews]
+
+💡 Tip: Use 'export txt' or 'export pdf' to save this conversation!
 ```
+
+### Export Features
+
+- **Export to Text**: Save conversations to `.txt` file
+- **Export to PDF**: Save formatted conversations to `.pdf` file
+- All exports are saved to `./exports` folder
+- Exports include timestamps, questions, source reviews, and answers
 
 ## Project Structure
 
-- `main.py` - Main chatbot interface
+- `main.py` - Main chatbot interface with command handling
 - `vector.py` - Vector store initialization and retriever setup
+- `export.py` - Export functionality (PDF and text export)
 - `realistic_restaurant_reviews.csv` - Restaurant review dataset
 - `requirements.txt` - Python dependencies
+- `exports/` - Directory for exported conversations
 
 ## How It Works
 
@@ -94,6 +123,44 @@ Ask your question (q to quit): What are the best Italian restaurants?
 6. **Display Answer**
    - Shows AI-generated response
    - Loop back to step 3 or exit with 'q'
+
+## Questions to Try
+
+**About Quality:**
+
+"What are the best pizza restaurants?"
+"Which places have the best crust?"
+"What restaurants offer good value for money?"
+
+**About Specific Styles:**
+
+"What are the best New York style pizzas?"
+"Do you have recommendations for Detroit-style pizza?"
+"Which restaurants serve Neapolitan pizza?"
+
+**About Ingredients:**
+
+"What pizzas have the best fresh ingredients?"
+"Which places use high-quality cheese?"
+"What are the best toppings you've seen?"
+
+**About Dietary Needs:**
+
+"Are there good gluten-free options?"
+"Which restaurants have vegan pizza?"
+"What are the best options for people with allergies?"
+
+**About Experience:**
+
+"Which restaurants have good customer service?"
+"Where can I take my kids?"
+"Which places are good for large groups?"
+
+**About Specific Aspects:**
+
+"What makes a good pizza sauce?"
+"Which restaurants are best for late-night eating?"
+"What's the most popular pepperoni pizza?"
 
 ## License
 

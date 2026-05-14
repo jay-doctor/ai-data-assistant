@@ -1,0 +1,15 @@
+LOCAL AI AGENT - EXPORT
+Generated: 2026-05-14 13:54:43
+================================================================================
+
+[1] 2026-05-14 13:52:37
+Q: What pizzas have the best fresh ingredients?
+A: Based on the reviews provided, it appears that the following pizzas stand out for having the best fresh ingredients:
+
+1. The "White Album" pizza with ricotta, mozzarella, garlic, and spinach, which mentions that their cheese is creamy but not heavy, and the fresh garlic adds a perfect punch.
+2. The seasonal spring offering, featuring asparagus, green garlic, and fresh peas, which praises its bright and delicious flavor.
+3. The "Mediterranean" pizza, which highlights its briny olives, tangy feta, fresh tomatoes, and herb-infused olive oil.
+
+These pizzas seem to emphasize the use of fresh ingredients, such as fresh tomatoes, garlic, asparagus, peas, ricotta cheese, and herbs.
+--------------------------------------------------------------------------------
+
