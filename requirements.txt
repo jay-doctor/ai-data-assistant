@@ -3,3 +3,6 @@ langchain-ollama
 langchain-chroma
 pandas
 fpdf2
+flask
+requests
+python-dotenv

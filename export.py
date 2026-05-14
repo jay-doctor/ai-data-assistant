@@ -23,14 +23,13 @@ class ExportManager:
     def export_to_text(self):
         """Export to text file"""
         if not self.history:
-            print("❌ No history to export!")
-            return
+            return None
         
         filename = f"conversation_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
         filepath = os.path.join(self.export_folder, filename)
         
         with open(filepath, 'w', encoding='utf-8') as f:
-            f.write("LOCAL AI AGENT - EXPORT\n")
+            f.write("AI DATA ASSISTANT - CONVERSATION EXPORT\n")
             f.write(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
             f.write("=" * 80 + "\n\n")
             
@@ -40,13 +39,12 @@ class ExportManager:
                 f.write(f"A: {conv['answer']}\n")
                 f.write("-" * 80 + "\n\n")
         
-        print(f"✅ Saved: {filepath}")
+        return filepath
     
     def export_to_pdf(self):
         """Export to PDF file"""
         if not self.history:
-            print("❌ No history to export!")
-            return
+            return None
         
         filename = f"conversation_{datetime.now().strftime('%Y%m%d_%H%M%S')}.pdf"
         filepath = os.path.join(self.export_folder, filename)
@@ -54,7 +52,7 @@ class ExportManager:
         pdf = FPDF()
         pdf.add_page()
         pdf.set_font("Arial", "B", 11)
-        pdf.cell(0, 10, "LOCAL AI AGENT - EXPORT", ln=True)
+        pdf.cell(0, 10, "AI DATA ASSISTANT - CONVERSATION EXPORT", ln=True)
         
         pdf.set_font("Arial", "", 8)
         for idx, conv in enumerate(self.history, 1):
@@ -65,9 +63,8 @@ class ExportManager:
             pdf.ln(1)
         
         pdf.output(filepath)
-        print(f"✅ Saved: {filepath}")
+        return filepath
     
     def clear_history(self):
         """Clear history"""
         self.history = []
-        print("✅ Cleared!")

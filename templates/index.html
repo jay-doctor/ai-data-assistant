@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Data Assistant</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background: #f5f5f7;
+            color: #1a1a2e;
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container { max-width: 900px; margin: 0 auto; }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+        
+        .header p { color: #666; font-size: 14px; }
+        
+        .card {
+            background: #16213e;
+            border: 1px solid #2a4a7c;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .chat-box {
+            height: 450px;
+            overflow-y: auto;
+            background: #0f3460;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #2a4a7c;
+        }
+        
+        .chat-box::-webkit-scrollbar { width: 8px; }
+        .chat-box::-webkit-scrollbar-track { background: #0f3460; }
+        .chat-box::-webkit-scrollbar-thumb { background: #6366f1; border-radius: 4px; }
+        
+        .message {
+            margin-bottom: 15px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            color: white;
+            word-wrap: break-word;
+        }
+        
+        .question {
+            background: #6366f1;
+            margin-left: 40px;
+            border-radius: 8px 0 8px 8px;
+        }
+        
+        .answer {
+            background: #8b5cf6;
+            margin-right: 40px;
+            border-radius: 0 8px 8px 8px;
+        }
+        
+        .empty-state {
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            padding: 30px;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .form-control {
+            flex: 1;
+            background: #0f3460;
+            border: 2px solid #2a4a7c;
+            color: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        
+        .form-control::placeholder { color: rgba(255,255,255,0.5); }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+        }
+        
+        .btn-send {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .btn-send:hover { transform: translateY(-2px); box-shadow: 0 5px 20px rgba(99,102,241,0.4); }
+        
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-action {
+            background: rgba(99,102,241,0.1);
+            border: 2px solid #6366f1;
+            color: #6366f1;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        
+        .btn-action:hover {
+            background: #6366f1;
+            color: white;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 15px;
+        }
+        
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #2a4a7c;
+            border-top-color: #6366f1;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        .error-box {
+            background: #8b0000;
+            border: 1px solid #ff6b6b;
+            color: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: none;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2a4a7c;
+        }
+        
+        .tab-btn {
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.6);
+            padding: 12px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        
+        .tab-btn.active {
+            color: #6366f1;
+            border-bottom-color: #6366f1;
+        }
+        
+        .tab-btn:hover {
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .search-result {
+            background: #0f3460;
+            border: 1px solid #2a4a7c;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            color: white;
+        }
+        
+        .result-header {
+            font-weight: 600;
+            color: #6366f1;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        
+        .result-item {
+            font-size: 13px;
+            color: rgba(255,255,255,0.8);
+            margin: 4px 0;
+        }
+        
+        .result-rating {
+            color: #ffc107;
+            font-weight: 600;
+        }
+        
+        .result-action {
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .btn-insights {
+            background: #8b5cf6;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 12px;
+        }
+        
+        .btn-insights:hover {
+            background: #6366f1;
+        }
+        
+        .insights-box {
+            background: #2a4a7c;
+            border: 2px solid #6366f1;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+            color: white;
+        }
+        
+        .insight-item {
+            margin: 8px 0;
+            font-size: 13px;
+        }
+        
+        .insight-label {
+            color: #6366f1;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI Assistant</h1>
+            <p>Intelligent insights for any business</p>
+        </div>
+
+        <div class="card">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('chat')">💬 Chat</button>
+                <button class="tab-btn" onclick="switchTab('search')">🔍 Search</button>
+            </div>
+
+            <!-- Chat Tab -->
+            <div id="chat" class="tab-content active">
+                <div class="chat-box" id="chatBox">
+                    <div class="empty-state">Start a conversation...</div>
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p style="color: white; margin-top: 10px;">Thinking...</p>
+                </div>
+
+                <div id="errorBox" class="error-box"></div>
+
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="questionInput" 
+                        placeholder="Type your question..."
+                        autocomplete="off"
+                    >
+                    <button class="btn-send" onclick="sendQuestion()">Send</button>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn-action" onclick="exportTxt()">Export TXT</button>
+                    <button class="btn-action" onclick="exportPdf()">Export PDF</button>
+                    <button class="btn-action" onclick="clearChat()">Clear Chat</button>
+                </div>
+            </div>
+
+            <!-- Search Tab -->
+            <div id="search" class="tab-content">
+                <div class="chat-box" id="searchResults" style="background: #0f3460;">
+                    <div class="empty-state">Search for businesses...</div>
+                </div>
+
+                <div class="loading" id="searchLoading">
+                    <div class="spinner"></div>
+                    <p style="color: white; margin-top: 10px;">Searching...</p>
+                </div>
+
+                <div id="searchErrorBox" class="error-box"></div>
+
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="searchQuery" 
+                        placeholder="Search any business (restaurants, salons, gyms...)"
+                        autocomplete="off"
+                    >
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="searchLocation" 
+                        placeholder="Location (e.g., New York)"
+                        autocomplete="off"
+                        style="flex: 0.8;"
+                    >
+                    <button class="btn-send" onclick="performSearch()">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chatBox');
+        const input = document.getElementById('questionInput');
+        const loading = document.getElementById('loading');
+        const errorBox = document.getElementById('errorBox');
+
+        function sendQuestion() {
+            const text = input.value.trim();
+            if (!text) return;
+
+            if (chatBox.innerHTML.includes('Start a conversation')) chatBox.innerHTML = '';
+            
+            addMessage(text, 'question');
+            input.value = '';
+            loading.style.display = 'block';
+            errorBox.style.display = 'none';
+
+            fetch('/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ question: text })
+            })
+            .then(r => r.json())
+            .then(d => {
+                loading.style.display = 'none';
+                d.error ? showError(d.error) : addMessage(d.answer, 'answer');
+            })
+            .catch(e => {
+                loading.style.display = 'none';
+                showError('Error: ' + e.message);
+            });
+        }
+
+        function addMessage(text, type) {
+            const div = document.createElement('div');
+            div.className = 'message ' + type;
+            div.textContent = text;
+            chatBox.appendChild(div);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function showError(msg) {
+            errorBox.textContent = msg;
+            errorBox.style.display = 'block';
+        }
+
+        function exportTxt() {
+            fetch('/export/txt')
+                .then(r => {
+                    if (r.ok) {
+                        return r.blob().then(blob => {
+                            const url = URL.createObjectURL(blob);
+                            const link = document.createElement('a');
+                            link.href = url;
+                            link.download = 'conversation_' + new Date().toISOString().slice(0, 19).replace(/:/g, '') + '.txt';
+                            link.click();
+                            showError('✅ Downloaded: conversation.txt');
+                        });
+                    }
+                    return r.json().then(d => showError(d.error));
+                });
+        }
+
+        function exportPdf() {
+            fetch('/export/pdf')
+                .then(r => {
+                    if (r.ok) {
+                        return r.blob().then(blob => {
+                            const url = URL.createObjectURL(blob);
+                            const link = document.createElement('a');
+                            link.href = url;
+                            link.download = 'conversation_' + new Date().toISOString().slice(0, 19).replace(/:/g, '') + '.pdf';
+                            link.click();
+                            showError('✅ Downloaded: conversation.pdf');
+                        });
+                    }
+                    return r.json().then(d => showError(d.error));
+                });
+        }
+
+        function clearChat() {
+            if (confirm('Clear chat history?')) {
+                fetch('/clear', { method: 'POST' })
+                    .then(() => {
+                        chatBox.innerHTML = '<div class="empty-state">Start a conversation...</div>';
+                    });
+            }
+        }
+
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            
+            document.getElementById(tab).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function performSearch() {
+            const query = document.getElementById('searchQuery').value.trim();
+            const location = document.getElementById('searchLocation').value.trim() || 'New York';
+            
+            if (!query) return alert('Please enter a search term');
+            
+            const searchResults = document.getElementById('searchResults');
+            const searchLoading = document.getElementById('searchLoading');
+            const searchErrorBox = document.getElementById('searchErrorBox');
+            
+            if (searchResults.innerHTML.includes('Search for businesses')) searchResults.innerHTML = '';
+            
+            searchLoading.style.display = 'block';
+            searchErrorBox.style.display = 'none';
+            
+            fetch(`/search?q=${encodeURIComponent(query)}&location=${encodeURIComponent(location)}`)
+                .then(r => r.json())
+                .then(d => {
+                    searchLoading.style.display = 'none';
+                    if (d.error) {
+                        searchErrorBox.textContent = d.error;
+                        searchErrorBox.style.display = 'block';
+                    } else {
+                        displayResults(d.results);
+                    }
+                })
+                .catch(e => {
+                    searchLoading.style.display = 'none';
+                    searchErrorBox.textContent = 'Error: ' + e.message;
+                    searchErrorBox.style.display = 'block';
+                });
+        }
+
+        function displayResults(results) {
+            const searchResults = document.getElementById('searchResults');
+            searchResults.innerHTML = '';
+            
+            if (results.length === 0) {
+                searchResults.innerHTML = '<div class="empty-state">No results found</div>';
+                return;
+            }
+            
+            results.forEach(r => {
+                const div = document.createElement('div');
+                div.className = 'search-result';
+                const safeName = r.name.replace(/'/g, "\\'");
+                div.innerHTML = `
+                    <div class="result-header">${r.name}</div>
+                    <div class="result-item"><span class="result-rating">⭐ ${r.rating}</span> (${r.review_count} reviews)</div>
+                    <div class="result-item">📍 ${r.location}</div>
+                    <div class="result-item">📞 ${r.phone || 'N/A'}</div>
+                    <div class="result-action">
+                        <button class="btn-insights" onclick="getInsights('${r.id}', '${safeName}')">🔍 AI Insights</button>
+                    </div>
+                    <div id="insights-${r.id}" style="display:none;"></div>
+                `;
+                searchResults.appendChild(div);
+            });
+        }
+
+        function getInsights(businessId, businessName) {
+            const insightsDiv = document.getElementById(`insights-${businessId}`);
+            const btn = event.target;
+            
+            if (insightsDiv.innerHTML) {
+                insightsDiv.style.display = insightsDiv.style.display === 'none' ? 'block' : 'none';
+                btn.textContent = insightsDiv.style.display === 'none' ? '🔍 AI Insights' : '⬇️ Hide Insights';
+                return;
+            }
+            
+            btn.textContent = '⏳ Loading...';
+            
+            fetch(`/insights?id=${businessId}&name=${encodeURIComponent(businessName)}`)
+                .then(r => r.json())
+                .then(d => {
+                    btn.textContent = '✅ Show Insights';
+                    if (d.error) {
+                        insightsDiv.innerHTML = `<div class="insights-box">Error: ${d.error}</div>`;
+                    } else {
+                        insightsDiv.innerHTML = `
+                            <div class="insights-box">
+                                <div class="insight-item"><span class="insight-label">💡 Summary:</span> ${d.summary}</div>
+                                <div class="insight-item"><span class="insight-label">😊 Sentiment:</span> ${d.sentiment}</div>
+                                <div class="insight-item"><span class="insight-label">⭐ Key Remarks:</span> ${d.top_remarks.join(', ')}</div>
+                                <div class="insight-item"><span class="insight-label">🎭 Vibe:</span> ${d.atmosphere}</div>
+                                <div class="insight-item"><span class="insight-label">👥 Best For:</span> ${d.best_for}</div>
+                            </div>
+                        `;
+                    }
+                    insightsDiv.style.display = 'block';
+                })
+                .catch(e => {
+                    btn.textContent = '❌ Error';
+                    insightsDiv.innerHTML = `<div class="insights-box">Error: ${e.message}</div>`;
+                    insightsDiv.style.display = 'block';
+                });
+        }
+
+        input.addEventListener('keypress', e => e.key === 'Enter' && sendQuestion());
+        document.getElementById('searchQuery').addEventListener('keypress', e => e.key === 'Enter' && performSearch());
+        document.getElementById('searchLocation').addEventListener('keypress', e => e.key === 'Enter' && performSearch());
+    </script>
+</body>
+</html>

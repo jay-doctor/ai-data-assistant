@@ -1,15 +1,19 @@
-# Local AI Agent
+# AI Data Assistant
 
-A local AI-powered chatbot that answers questions about restaurant reviews using LangChain, Ollama embeddings, and Chroma vector database.
+A powerful AI assistant that provides intelligent insights about businesses using local LLM analysis and live Yelp data integration. Combines vector search on local CSV data with real-time business insights powered by RAG (Retrieval-Augmented Generation).
 
 ## Features
 
-- **Local LLM**: Uses Ollama with Llama 3.2 model
-- **Vector Search**: Retrieves relevant restaurant reviews using embeddings
-- **RAG (Retrieval-Augmented Generation)**: Combines retrieved reviews with LLM for accurate answers
-- **No API Keys Required**: Runs entirely locally
+- **Dual Mode Processing**:
+  - 💬 **Chat Tab**: Vector search on local restaurant reviews (no API calls, completely free)
+  - 🔍 **Search Tab**: Live Yelp API integration with AI-powered business insights
+- **LLM Analysis**: Uses Ollama with Llama 3.2 model for intelligent responses
+- **RAG Pipeline**: Retrieves relevant data and augments LLM prompts for accurate answers
+- **Business Insights**: AI analysis of Yelp businesses (summary, sentiment, vibe, best for)
+- **Smart Caching**: Prevents duplicate API calls, optimizes Yelp quota usage
+- **Web Interface**: Beautiful, responsive Flask web app with light theme
 - **Export Conversations**: Save chat history to PDF or Text formats
-- **Conversation History**: Track all Q&A exchanges in a session
+- **API Usage Tracking**: Monitor Yelp API calls and remaining quota in real-time
 
 ## Requirements
 
@@ -21,14 +25,18 @@ A local AI-powered chatbot that answers questions about restaurant reviews using
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/jay-doctor/local-ai-agent.git
-cd local-ai-agent
+git clone <your-repo-url>
+cd ai-data-assistant
 ```
 
-2. Create a virtual environment:
+2. Create and activate a virtual environment:
 ```bash
 python -m venv venv
-source venv/Scripts/activate  # On Windows
+
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
 ```
 
 3. Install dependencies:
@@ -40,46 +48,45 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Option 1: Web Interface (Recommended) 🌐
+
+Run the Flask web app:
+```bash
+python app.py
+```
+
+Then open your browser:
+```
+http://localhost:5000
+```
+
+**Features:**
+- Clean, intuitive chat interface
+- Ask questions directly
+- Export conversations to PDF/Text
+- Clear history with one click
+
+### Option 2: Command Line Interface 💻
+
 Run the interactive chatbot:
 ```bash
 python main.py
 ```
 
-### Commands
-
-Once the chatbot is running, you can use these commands:
-
-| Command | Description |
-|---------|-------------|
-| `q` | Quit the application |
-| `export txt` | Export conversation history to text file |
-| `export pdf` | Export conversation history to PDF file |
-| `history` | View conversation history summary |
-| `clear` | Clear conversation history |
-| `help` | Show available commands |
-
-### Example
-
-```
-Ask your question (q to quit, help for commands): What are the best Italian restaurants?
-
-[AI generates answer based on restaurant reviews]
-
-💡 Tip: Use 'export txt' or 'export pdf' to save this conversation!
-```
-
-### Export Features
-
-- **Export to Text**: Save conversations to `.txt` file
-- **Export to PDF**: Save formatted conversations to `.pdf` file
-- All exports are saved to `./exports` folder
-- Exports include timestamps, questions, source reviews, and answers
+**Commands:**
+- `q` - Quit
+- `export txt` - Export to text file
+- `export pdf` - Export to PDF file
+- `clear` - Clear conversation history
+- `help` - Show commands
 
 ## Project Structure
 
-- `main.py` - Main chatbot interface with command handling
-- `vector.py` - Vector store initialization and retriever setup
-- `export.py` - Export functionality (PDF and text export)
+- `app.py` - Flask web interface
+- `main.py` - Command-line chatbot
+- `vector.py` - Vector store initialization and retrieval
+- `export.py` - PDF and text export functionality
+- `templates/` - HTML templates for web interface
 - `realistic_restaurant_reviews.csv` - Restaurant review dataset
 - `requirements.txt` - Python dependencies
 - `exports/` - Directory for exported conversations
@@ -124,43 +131,24 @@ Ask your question (q to quit, help for commands): What are the best Italian rest
    - Shows AI-generated response
    - Loop back to step 3 or exit with 'q'
 
-## Questions to Try
+## Quick Start
 
-**About Quality:**
+1. Ensure **Ollama** is running: `http://localhost:11434`
+2. Ensure `.env` file has `YELP_API_KEY` (for Search Tab)
+3. Run the web interface: `python app.py`
+4. Open: `http://localhost:5000`
 
-"What are the best pizza restaurants?"
-"Which places have the best crust?"
-"What restaurants offer good value for money?"
+### Chat Tab (Local - No API Calls)
+Ask questions about local CSV data:
+- "What are the best pizza places?"
+- "Which restaurants offer good value?"
+- "What are the best Italian restaurants?"
 
-**About Specific Styles:**
-
-"What are the best New York style pizzas?"
-"Do you have recommendations for Detroit-style pizza?"
-"Which restaurants serve Neapolitan pizza?"
-
-**About Ingredients:**
-
-"What pizzas have the best fresh ingredients?"
-"Which places use high-quality cheese?"
-"What are the best toppings you've seen?"
-
-**About Dietary Needs:**
-
-"Are there good gluten-free options?"
-"Which restaurants have vegan pizza?"
-"What are the best options for people with allergies?"
-
-**About Experience:**
-
-"Which restaurants have good customer service?"
-"Where can I take my kids?"
-"Which places are good for large groups?"
-
-**About Specific Aspects:**
-
-"What makes a good pizza sauce?"
-"Which restaurants are best for late-night eating?"
-"What's the most popular pepperoni pizza?"
+### Search Tab (Live Yelp API)
+Search any business and get AI insights:
+1. Search: "Pizza restaurants in New York"
+2. Click "AI Insights" on any result
+3. View: Summary, sentiment, vibe, best for, key remarks
 
 ## License
 

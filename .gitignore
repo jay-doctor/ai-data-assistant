@@ -36,6 +36,7 @@ chrome_langchain_db/
 # Environment variables
 .env
 .env.local
+*.env
 
 # OS
 .DS_Store
@@ -43,3 +44,6 @@ Thumbs.db
 
 # Generated exports/conversations
 exports/
+
+# Local development documentation (kept in workspace, not synced)
+PROJECT_FLOW.md

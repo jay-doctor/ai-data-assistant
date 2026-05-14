@@ -18,7 +18,7 @@ prompt = ChatPromptTemplate.from_template(template)
 chain = prompt | model
 
 print("\n" + "="*50)
-print("LOCAL AI AGENT - RESTAURANT CHATBOT")
+print("AI DATA ASSISTANT - CHAT")
 print("="*50)
 print("Commands: help, export txt, export pdf, clear, q\n")
 

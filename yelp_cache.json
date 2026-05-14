@@ -1,0 +1,648 @@
+{
+  "ruffs burger:germany": [
+    {
+      "name": "Bistro Street Food",
+      "rating": 5.0,
+      "review_count": 4,
+      "location": "Weinbergsweg 27",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/bistro-street-food-berlin?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/8MHzkdjnH56etftYor2TYg/o.jpg"
+    },
+    {
+      "name": "Marthas",
+      "rating": 4.7,
+      "review_count": 10,
+      "location": "Mehringdamm 40",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/marthas-berlin-2?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/CC4pIk72mmeWb3IUzPIHmg/o.jpg"
+    },
+    {
+      "name": "Kebab House Imbiss",
+      "rating": 4.5,
+      "review_count": 13,
+      "location": "Steglitzer Damm 14",
+      "phone": "+493079743913",
+      "url": "https://www.yelp.com/biz/kebab-house-imbiss-berlin?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/jiPFuipbxL-80TnWOk8UOg/o.jpg"
+    },
+    {
+      "name": "POUND and PENCE",
+      "rating": 4.5,
+      "review_count": 6,
+      "location": "Arminiusstr. 2-4",
+      "phone": "+4917684889969",
+      "url": "https://www.yelp.com/biz/pound-and-pence-berlin?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/iidw5OM-mFvSdm7BT_yD2Q/o.jpg"
+    },
+    {
+      "name": "Windburger",
+      "rating": 4.5,
+      "review_count": 8,
+      "location": "Skalitzer Str. 36",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/windburger-berlin-2?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/zdKdvP437dUzxQ4CNfkHtQ/o.jpg"
+    }
+  ],
+  "ruff burger:germany": [
+    {
+      "name": "Good Morning Monday",
+      "rating": 5.0,
+      "review_count": 9,
+      "location": "Falckensteinstr. 18",
+      "phone": "+491638394228",
+      "url": "https://www.yelp.com/biz/good-morning-monday-berlin?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/c9MkAf5jCBEyrh5z6Bu75w/o.jpg"
+    },
+    {
+      "name": "Kuckucksei",
+      "rating": 4.9,
+      "review_count": 13,
+      "location": "Barbarossastr. 5 a",
+      "phone": "+493021917134",
+      "url": "https://www.yelp.com/biz/kuckucksei-berlin?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/36xVoicJ0uYyIsUlTZd20Q/o.jpg"
+    },
+    {
+      "name": "Bistro Street Food",
+      "rating": 5.0,
+      "review_count": 4,
+      "location": "Weinbergsweg 27",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/bistro-street-food-berlin?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/8MHzkdjnH56etftYor2TYg/o.jpg"
+    },
+    {
+      "name": "Marthas",
+      "rating": 4.7,
+      "review_count": 10,
+      "location": "Mehringdamm 40",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/marthas-berlin-2?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/CC4pIk72mmeWb3IUzPIHmg/o.jpg"
+    },
+    {
+      "name": "Mal\u00f6r",
+      "rating": 4.6,
+      "review_count": 8,
+      "location": "Bellermannstr. 98",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/mal%C3%B6r-berlin?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/wT-kOtRMqK3z934S2PTrSQ/o.jpg"
+    }
+  ],
+  "ruffs burger:regensburg": [
+    {
+      "name": "Beach House",
+      "rating": 4.7,
+      "review_count": 3,
+      "location": "Donaustaufer Str. 256",
+      "phone": "+4994146374637",
+      "url": "https://www.yelp.com/biz/beach-house-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/AQJOyW7Gy84LFsz_6ERaVw/o.jpg"
+    },
+    {
+      "name": "Burgerheart",
+      "rating": 4.7,
+      "review_count": 3,
+      "location": "Schwarze-B\u00e4ren-Str. 10",
+      "phone": "+4994146627330",
+      "url": "https://www.yelp.com/biz/burgerheart-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/C4eh3-Er57AVRpv0aobIAw/o.jpg"
+    },
+    {
+      "name": "Dean & David",
+      "rating": 4.0,
+      "review_count": 6,
+      "location": "Weichser Weg 5",
+      "phone": "+4994189795091",
+      "url": "https://www.yelp.com/biz/dean-und-david-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/PAfVZIuengm7h6eq0ftIlg/o.jpg"
+    },
+    {
+      "name": "DTP-Studio Denzl",
+      "rating": 5.0,
+      "review_count": 1,
+      "location": "Adolf-Schmetzer-Str. 14",
+      "phone": "+49941449644",
+      "url": "https://www.yelp.com/biz/dtp-studio-denzl-regensburg-2?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "name": "Restaurant & K\u00fcnstlerhaus im Andreasstadl",
+      "rating": 5.0,
+      "review_count": 1,
+      "location": "Andreasstr. 28",
+      "phone": "+499418305873",
+      "url": "https://www.yelp.com/biz/restaurant-and-k%C3%BCnstlerhaus-im-andreasstadl-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/U04hLaL5uNyGdcAo1zTLDw/o.jpg"
+    }
+  ],
+  "mcdonalds:regensburg": [
+    {
+      "name": "McDonald's",
+      "rating": 1.8,
+      "review_count": 6,
+      "location": "Maximilianstr. 29",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/mcdonalds-regensburg-8?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/mxSJFfXL6ZI_X2BN0wqJtw/o.jpg"
+    },
+    {
+      "name": "McDonald's",
+      "rating": 1.0,
+      "review_count": 1,
+      "location": "Vilsstr. 27",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/mcdonalds-regensburg-7?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/K-frNY2-BPVA_m7KL7VDjg/o.jpg"
+    },
+    {
+      "name": "McDonald's",
+      "rating": 3.5,
+      "review_count": 6,
+      "location": "Friedenstr. 23",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/mcdonalds-regensburg-5?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/5eHm-UiUZNEN7g7SMakC5A/o.jpg"
+    },
+    {
+      "name": "McDonald's",
+      "rating": 4.0,
+      "review_count": 1,
+      "location": "Wei\u00dfgerbergraben 26",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/mcdonalds-regensburg-6?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/8ccNV8l-FDnX_noto_vNIQ/o.jpg"
+    },
+    {
+      "name": "McDonald's",
+      "rating": 1.0,
+      "review_count": 1,
+      "location": "Franz-Hartl-Str. 8",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/mcdonalds-regensburg-9?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/_ByxkY_icVIxTnOe9H6EQw/o.jpg"
+    }
+  ],
+  "burger:regensburg": [
+    {
+      "name": "kAff\u00e9 dAdA",
+      "rating": 4.8,
+      "review_count": 33,
+      "location": "Rote-L\u00f6wen-Str. 11",
+      "phone": "+4994156993489",
+      "url": "https://www.yelp.com/biz/kaff%C3%A9-dada-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/MIbyDt96yjiYAZKretJVlQ/o.jpg"
+    },
+    {
+      "name": "Burgerheart",
+      "rating": 4.7,
+      "review_count": 3,
+      "location": "Schwarze-B\u00e4ren-Str. 10",
+      "phone": "+4994146627330",
+      "url": "https://www.yelp.com/biz/burgerheart-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/C4eh3-Er57AVRpv0aobIAw/o.jpg"
+    },
+    {
+      "name": "MAX + MUH - Burger mit Respekt",
+      "rating": 4.0,
+      "review_count": 20,
+      "location": "Ludwig-Thoma-Str. 33",
+      "phone": "+49941x99225436",
+      "url": "https://www.yelp.com/biz/max-muh-burger-mit-respekt-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/bxtNX86CnhZXkSPirGrDKQ/o.jpg"
+    },
+    {
+      "name": "Alte Ziegelei",
+      "rating": 4.5,
+      "review_count": 2,
+      "location": "Ziegetsdorfer Str. 111",
+      "phone": "+49941463930",
+      "url": "https://www.yelp.com/biz/alte-ziegelei-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/TJT2YFuXj6rV-GL1nuJ0fA/o.jpg"
+    },
+    {
+      "name": "Hans Im Gl\u00fcck",
+      "rating": 3.6,
+      "review_count": 27,
+      "location": "Kohlenmarkt 6",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/hans-im-gl%C3%BCck-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/xhE35h0Hs0EOdfGZk7mDdA/o.jpg"
+    }
+  ],
+  "burger store in regensburg:regensburg": [
+    {
+      "name": "kAff\u00e9 dAdA",
+      "rating": 4.8,
+      "review_count": 33,
+      "location": "Rote-L\u00f6wen-Str. 11",
+      "phone": "+4994156993489",
+      "url": "https://www.yelp.com/biz/kaff%C3%A9-dada-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/MIbyDt96yjiYAZKretJVlQ/o.jpg"
+    },
+    {
+      "name": "Kaminski",
+      "rating": 4.5,
+      "review_count": 22,
+      "location": "Hinter der Grieb 6",
+      "phone": "+499415999033",
+      "url": "https://www.yelp.com/biz/kaminski-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/cDm10aY_p8HcQ0ZGIHjwtQ/o.jpg"
+    },
+    {
+      "name": "Puro",
+      "rating": 4.8,
+      "review_count": 4,
+      "location": "Im Gewerbepark C26",
+      "phone": "+499414611722",
+      "url": "https://www.yelp.com/biz/puro-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/0wE_CfQXyYlkRTv0DKpHSw/o.jpg"
+    },
+    {
+      "name": "Icebreaker",
+      "rating": 4.8,
+      "review_count": 4,
+      "location": "Engelburgergasse  18",
+      "phone": "+4915161483282",
+      "url": "https://www.yelp.com/biz/icebreaker-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/3TUDrfjJCCR0H-z_-nPISw/o.jpg"
+    },
+    {
+      "name": "Venezia",
+      "rating": 4.8,
+      "review_count": 4,
+      "location": "Glockengasse 1",
+      "phone": "+4994158971",
+      "url": "https://www.yelp.com/biz/venezia-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/9st5Yn7NDQ8WlUgWLHnocw/o.jpg"
+    }
+  ],
+  "salons:regensburg": [
+    {
+      "id": "WjSqP5zgGsD_IwmcMPGL2g",
+      "name": "Float",
+      "rating": 5.0,
+      "review_count": 4,
+      "location": "Krebsgasse 8",
+      "phone": "+499415865620",
+      "url": "https://www.yelp.com/biz/float-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/YbnlxUIZc1ka_Cu_KvYEXw/o.jpg"
+    },
+    {
+      "id": "fj0mb9ZweCzfn6NvQjMqxA",
+      "name": "Eden-Reha Privatklinik f. Rehabilitation",
+      "rating": 5.0,
+      "review_count": 2,
+      "location": "Lessingstr. 39-41",
+      "phone": "+4994033821",
+      "url": "https://www.yelp.com/biz/eden-reha-privatklinik-f-rehabilitation-donaustauf?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "id": "hy9onN-5lfSFc1tV1cz3Nw",
+      "name": "Stefan Job",
+      "rating": 5.0,
+      "review_count": 1,
+      "location": "Hauptstr. 22",
+      "phone": "+4994079589177",
+      "url": "https://www.yelp.com/biz/stefan-job-wenzenbach?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/z0heRpOYKr2Lo2mViwtBQw/o.jpg"
+    },
+    {
+      "id": "6HryXZlXljPk79tuhJilDA",
+      "name": "Wellssage",
+      "rating": 5.0,
+      "review_count": 1,
+      "location": "Gutenbergstr. 9",
+      "phone": "+4994137806620",
+      "url": "https://www.yelp.com/biz/wellssage-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "id": "0ulsjSgVh3aOKVWSqkKGdQ",
+      "name": "Aveda Friseur Senseason",
+      "rating": 3.9,
+      "review_count": 8,
+      "location": "Untere Bachgasse 1",
+      "phone": "+499415865362",
+      "url": "https://www.yelp.com/biz/aveda-friseur-senseason-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/jipShR6ccKnBVMf4y9peOw/o.jpg"
+    }
+  ],
+  "restaurants:regensburg": [
+    {
+      "id": "bTGqnnfFvi6LtTBS5GQZgg",
+      "name": "Kuk Asia Imbiss",
+      "rating": 4.8,
+      "review_count": 9,
+      "location": "Oberm\u00fcnsterstr. 11",
+      "phone": "+4994138220859",
+      "url": "https://www.yelp.com/biz/kuk-asia-imbiss-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/ROJlx3mWyql8ysHCnvQQAg/o.jpg"
+    },
+    {
+      "id": "RBoreJOsh8cYrzuYJmwjFg",
+      "name": "kAff\u00e9 dAdA",
+      "rating": 4.8,
+      "review_count": 33,
+      "location": "Rote-L\u00f6wen-Str. 11",
+      "phone": "+4994156993489",
+      "url": "https://www.yelp.com/biz/kaff%C3%A9-dada-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/MIbyDt96yjiYAZKretJVlQ/o.jpg"
+    },
+    {
+      "id": "qJEFtUUc0dH_5EIri_LpQw",
+      "name": "Caf\u00e9 Goliath am Dom",
+      "rating": 5.0,
+      "review_count": 4,
+      "location": "Goliathstr. 10",
+      "phone": "+499412000900",
+      "url": "https://www.yelp.com/biz/caf%C3%A9-goliath-am-dom-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/7dZqlLBps8CnYajUgUK6Og/o.jpg"
+    },
+    {
+      "id": "bRfjJqHadJqCxn0Q7Z1TGw",
+      "name": "chocolat",
+      "rating": 5.0,
+      "review_count": 4,
+      "location": "Tannenstr. 7",
+      "phone": "",
+      "url": "https://www.yelp.com/biz/chocolat-tegernheim?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "id": "AL-COO9N4KuuxhyVgRxwjQ",
+      "name": "kuchenbar.",
+      "rating": 4.7,
+      "review_count": 26,
+      "location": "Am Protzenweiher 1",
+      "phone": "+4994138216995",
+      "url": "https://www.yelp.com/biz/kuchenbar-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/JIfL_f8aqFwhB-hTgJ3BWw/o.jpg"
+    }
+  ],
+  "pizza:regensburg": [
+    {
+      "id": "2fEsP_DRV35im4vr8C-jLQ",
+      "name": "Pizzeria Don Pietro",
+      "rating": 4.8,
+      "review_count": 5,
+      "location": "N\u00fcrnberger Str. 17",
+      "phone": "+499404640240",
+      "url": "https://www.yelp.com/biz/pizzeria-don-pietro-nittendorf?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/nj8yasmBbF_JSfdT7ff9Uw/o.jpg"
+    },
+    {
+      "id": "TrBlfJKFwCd7gmtTGtnUjQ",
+      "name": "Enjoy Pizza",
+      "rating": 4.6,
+      "review_count": 10,
+      "location": "Bischof-Konrad-Str. 9",
+      "phone": "+499417842389",
+      "url": "https://www.yelp.com/biz/enjoy-pizza-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/TqY2mHhjp-SFpO5ASQF2fw/o.jpg"
+    },
+    {
+      "id": "IIPk54NEJBclFU1VDScbAg",
+      "name": "Casa della Pasta",
+      "rating": 5.0,
+      "review_count": 3,
+      "location": "D.-Martin-Luther-Str. 2",
+      "phone": "+4917620654732",
+      "url": "https://www.yelp.com/biz/casa-della-pasta-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/6Bxmc-vJWpiw27UCUvnmSg/o.jpg"
+    },
+    {
+      "id": "UwsczrjkEThy9QiLSkIyOQ",
+      "name": "Pizza Alex Pizzeria",
+      "rating": 4.4,
+      "review_count": 7,
+      "location": "Sudetenstr. 24",
+      "phone": "+499401912990",
+      "url": "https://www.yelp.com/biz/pizza-alex-pizzeria-neutraubling?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/bSDQLKpGOKeiAe_z8boz_Q/o.jpg"
+    },
+    {
+      "id": "eWIo0Y_XsC5TuaPOhWqfiw",
+      "name": "Pizzeria Milano",
+      "rating": 4.4,
+      "review_count": 5,
+      "location": "Burgunderstr. 17",
+      "phone": "+4994173319",
+      "url": "https://www.yelp.com/biz/pizzeria-milano-regensburg-2?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/r0s788nXCb66KU5jV1paqg/o.jpg"
+    }
+  ],
+  "dominos pizza:regensburg": [
+    {
+      "id": "Uet3QwwKsX2YtzwqHZqnog",
+      "name": "Domino's",
+      "rating": 0.0,
+      "review_count": 0,
+      "location": "Luitpoldstr. 17",
+      "phone": "+499131401020",
+      "url": "https://www.yelp.com/biz/dominos-erlangen?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "id": "5HRbt0_gGKVCWkhu6Uq0Ew",
+      "name": "Domino's",
+      "rating": 0.0,
+      "review_count": 0,
+      "location": "Asamstr. 2",
+      "phone": "+498418813388",
+      "url": "https://www.yelp.com/biz/dominos-ingolstadt?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "id": "Cg7EZfUb6JeDXpw45xZXSg",
+      "name": "Domino's  Nord-west",
+      "rating": 0.0,
+      "review_count": 0,
+      "location": "Bucher Str. 64",
+      "phone": "+49911338700",
+      "url": "https://www.yelp.com/biz/dominos-n%C3%BCrnberg-6?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/j8HOmzrAsgFA-JUaPZ2hvw/o.jpg"
+    },
+    {
+      "id": "gLnJvSkFzNlItvP1isHosQ",
+      "name": "Domino's",
+      "rating": 0.0,
+      "review_count": 0,
+      "location": "Landgrabenstr. 40",
+      "phone": "+4991192383038",
+      "url": "https://www.yelp.com/biz/dominos-n%C3%BCrnberg-2?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "id": "25nSsFnwj-PBWFRmcD6DbA",
+      "name": "Domino's",
+      "rating": 0.0,
+      "review_count": 0,
+      "location": "Glei\u00dfb\u00fchlstr. 12-14",
+      "phone": "+4991165003344",
+      "url": "https://www.yelp.com/biz/dominos-n%C3%BCrnberg-5?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    }
+  ],
+  "dominos:new york": [
+    {
+      "id": "MQ_a14GsdMrXsnt9mgqx_Q",
+      "name": "Domino's Pizza",
+      "rating": 2.1,
+      "review_count": 48,
+      "location": "45 Catherine St",
+      "phone": "+12128024444",
+      "url": "https://www.yelp.com/biz/dominos-pizza-new-york-35?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/Uwr2dBL8qAryHsBhh_zJDQ/o.jpg"
+    },
+    {
+      "id": "rsLV9k6Lkb94NjJiAFlJfA",
+      "name": "Domino's Pizza",
+      "rating": 1.4,
+      "review_count": 107,
+      "location": "146 Smith St",
+      "phone": "+17185967000",
+      "url": "https://www.yelp.com/biz/dominos-pizza-brooklyn-12?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/tv1z9sCqVjmCkKWumxoUDA/o.jpg"
+    },
+    {
+      "id": "eXXoliL1P16O6omiJN0cQg",
+      "name": "Domino's Pizza",
+      "rating": 1.9,
+      "review_count": 54,
+      "location": "440 E 14th St",
+      "phone": "+12124733030",
+      "url": "https://www.yelp.com/biz/dominos-pizza-new-york-34?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/RrWeoSzZw_Z0C5Qy8nY-pQ/o.jpg"
+    },
+    {
+      "id": "fvtVOVRfopfXdhvES9n1fg",
+      "name": "Domino's Pizza",
+      "rating": 2.0,
+      "review_count": 114,
+      "location": "227 W 40th St",
+      "phone": "+12129440400",
+      "url": "https://www.yelp.com/biz/dominos-pizza-new-york-9?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/v0yKd3LZL8yvCsWw2VPROg/o.jpg"
+    },
+    {
+      "id": "B7dKdDzaqK4Az-br-URGgA",
+      "name": "Domino's Pizza",
+      "rating": 1.4,
+      "review_count": 245,
+      "location": "183 Graham Ave",
+      "phone": "+17183022400",
+      "url": "https://www.yelp.com/biz/dominos-pizza-brooklyn-2?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/pS2wFuRU8b_3HIYXPs_71A/o.jpg"
+    }
+  ],
+  "dominos:regensburg": [
+    {
+      "id": "25nSsFnwj-PBWFRmcD6DbA",
+      "name": "Domino's",
+      "rating": 0.0,
+      "review_count": 0,
+      "location": "Glei\u00dfb\u00fchlstr. 12-14",
+      "phone": "+4991165003344",
+      "url": "https://www.yelp.com/biz/dominos-n%C3%BCrnberg-5?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "id": "Uet3QwwKsX2YtzwqHZqnog",
+      "name": "Domino's",
+      "rating": 0.0,
+      "review_count": 0,
+      "location": "Luitpoldstr. 17",
+      "phone": "+499131401020",
+      "url": "https://www.yelp.com/biz/dominos-erlangen?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "id": "5HRbt0_gGKVCWkhu6Uq0Ew",
+      "name": "Domino's",
+      "rating": 0.0,
+      "review_count": 0,
+      "location": "Asamstr. 2",
+      "phone": "+498418813388",
+      "url": "https://www.yelp.com/biz/dominos-ingolstadt?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "id": "gLnJvSkFzNlItvP1isHosQ",
+      "name": "Domino's",
+      "rating": 0.0,
+      "review_count": 0,
+      "location": "Landgrabenstr. 40",
+      "phone": "+4991192383038",
+      "url": "https://www.yelp.com/biz/dominos-n%C3%BCrnberg-2?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "id": "Cg7EZfUb6JeDXpw45xZXSg",
+      "name": "Domino's  Nord-west",
+      "rating": 0.0,
+      "review_count": 0,
+      "location": "Bucher Str. 64",
+      "phone": "+49911338700",
+      "url": "https://www.yelp.com/biz/dominos-n%C3%BCrnberg-6?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/j8HOmzrAsgFA-JUaPZ2hvw/o.jpg"
+    }
+  ],
+  "burger king:regensburg": [
+    {
+      "id": "l-AhovEueTAk66ebNj7T_g",
+      "name": "Burger King",
+      "rating": 1.7,
+      "review_count": 3,
+      "location": "Bahnhofstr. 18",
+      "phone": "+4994159579910",
+      "url": "https://www.yelp.com/biz/burger-king-regensburg-2?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/2McdZmP60OSRTDDBVA1lxQ/o.jpg"
+    },
+    {
+      "id": "F3iOaGrzn8u3lAGndlhNYQ",
+      "name": "Burger King",
+      "rating": 3.3,
+      "review_count": 3,
+      "location": "Max-Planck-Str. 8",
+      "phone": "+499417803357",
+      "url": "https://www.yelp.com/biz/burger-king-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/uC-gdd79WKtWN_t_3C38Yw/o.jpg"
+    },
+    {
+      "id": "NDu5SP3ySbkOKzS9n_wRIQ",
+      "name": "Burger King",
+      "rating": 1.0,
+      "review_count": 1,
+      "location": "Residenzstr. 2",
+      "phone": "+499412906111",
+      "url": "https://www.yelp.com/biz/burger-king-regensburg-3?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/ywj3bmWCc4vxlgD_VKurSw/o.jpg"
+    },
+    {
+      "id": "3hgBViepeSZTK0c62TVb3w",
+      "name": "Burger King",
+      "rating": 0.0,
+      "review_count": 0,
+      "location": "Gleiwitzer Str. 10",
+      "phone": "+499401911990",
+      "url": "https://www.yelp.com/biz/burger-king-neutraubling?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": ""
+    },
+    {
+      "id": "QMXvG8ezh9dO941QkGtwaw",
+      "name": "Burgerheart",
+      "rating": 4.7,
+      "review_count": 3,
+      "location": "Schwarze-B\u00e4ren-Str. 10",
+      "phone": "+4994146627330",
+      "url": "https://www.yelp.com/biz/burgerheart-regensburg?adjust_creative=JVo5pVlTsPVhLjDWpaG5Hg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=JVo5pVlTsPVhLjDWpaG5Hg",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/C4eh3-Er57AVRpv0aobIAw/o.jpg"
+    }
+  ]
+}
