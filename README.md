@@ -5,7 +5,7 @@ A powerful AI assistant that provides intelligent insights about businesses usin
 ## Features
 
 - **Dual Mode Processing**:
-  - 💬 **Chat Tab**: Vector search on local restaurant reviews (no API calls, completely free)
+  - 💬 **Chat Tab**: Vector search on local business reviews (no API calls, completely free)
   - 🔍 **Search Tab**: Live Yelp API integration with AI-powered business insights
 - **LLM Analysis**: Uses Ollama with Llama 3.2 model for intelligent responses
 - **RAG Pipeline**: Retrieves relevant data and augments LLM prompts for accurate answers
@@ -26,7 +26,7 @@ A powerful AI assistant that provides intelligent insights about businesses usin
 1. Clone the repository:
 ```bash
 git clone <your-repo-url>
-cd ai-data-assistant
+cd local-ai-agent
 ```
 
 2. Create and activate a virtual environment:
@@ -87,7 +87,7 @@ python main.py
 - `vector.py` - Vector store initialization and retrieval
 - `export.py` - PDF and text export functionality
 - `templates/` - HTML templates for web interface
-- `realistic_restaurant_reviews.csv` - Restaurant review dataset
+- `realistic_restaurant_reviews.csv` - Business review dataset (sample: restaurant data)
 - `requirements.txt` - Python dependencies
 - `exports/` - Directory for exported conversations
 
@@ -95,7 +95,7 @@ python main.py
 
 ### Overview
 
-1. **Data Loading**: Restaurant reviews from CSV are loaded and processed
+1. **Data Loading**: Business reviews from CSV are loaded and processed
 2. **Embeddings**: Reviews are converted to embeddings using `mxbai-embed-large`
 3. **Vector Store**: Embeddings are stored in Chroma database
 4. **Retrieval**: When you ask a question, the 5 most relevant reviews are retrieved
@@ -103,8 +103,8 @@ python main.py
 
 ### Detailed Workflow
 
-1. **Load Restaurant Reviews**
-   - Reads `realistic_restaurant_reviews.csv`
+1. **Load Business Reviews**
+   - Reads `realistic_restaurant_reviews.csv` (or any business review CSV)
    - Contains reviews with ratings and comments
 
 2. **Create Vector Embeddings**
@@ -115,12 +115,12 @@ python main.py
 3. **User Input**
    - Run `python main.py`
    - Chatbot prompts: "Ask your question (q to quit):"
-   - Example: "What are the best Italian restaurants?"
+   - Example: "What do customers value most in this business?"
 
 4. **Retrieve Relevant Reviews**
    - Converts your question to embeddings
    - Searches Chroma for semantically similar reviews
-   - Fetches top matching restaurant reviews
+   - Fetches top matching business reviews
 
 5. **Generate AI Response**
    - Sends retrieved reviews + question to Ollama LLM (Llama 3.2)
@@ -140,13 +140,13 @@ python main.py
 
 ### Chat Tab (Local - No API Calls)
 Ask questions about local CSV data:
-- "What are the best pizza places?"
-- "Which restaurants offer good value?"
-- "What are the best Italian restaurants?"
+- "What do customers appreciate most?"
+- "Which businesses offer good value?"
+- "What are common complaints or praise?"
 
 ### Search Tab (Live Yelp API)
 Search any business and get AI insights:
-1. Search: "Pizza restaurants in New York"
+1. Search: "Coffee shops in New York" (or any business type)
 2. Click "AI Insights" on any result
 3. View: Summary, sentiment, vibe, best for, key remarks
 

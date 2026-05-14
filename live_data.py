@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class YelpSearcher:
-    """Search restaurants on Yelp using free API"""
+    """Search businesses on Yelp using free API"""
     
     def __init__(self):
         self.api_key = os.getenv('YELP_API_KEY')
@@ -33,7 +33,7 @@ class YelpSearcher:
             json.dump(self.cache, f, indent=2)
     
     def search(self, query, location="New York"):
-        """Search restaurants on Yelp"""
+        """Search businesses on Yelp"""
         
         # Check cache first
         cache_key = f"{query}:{location}".lower()
